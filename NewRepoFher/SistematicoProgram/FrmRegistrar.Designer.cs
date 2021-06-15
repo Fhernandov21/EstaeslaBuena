@@ -46,6 +46,7 @@ namespace SistematicoProgram
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.cmbMarca = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnBrowse = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -117,7 +118,7 @@ namespace SistematicoProgram
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombres.Location = new System.Drawing.Point(109, 73);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(226, 20);
+            this.txtNombres.Size = new System.Drawing.Size(272, 20);
             this.txtNombres.TabIndex = 9;
             // 
             // txtNumeroExistencia
@@ -126,7 +127,7 @@ namespace SistematicoProgram
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNumeroExistencia.Location = new System.Drawing.Point(109, 104);
             this.txtNumeroExistencia.Name = "txtNumeroExistencia";
-            this.txtNumeroExistencia.Size = new System.Drawing.Size(226, 20);
+            this.txtNumeroExistencia.Size = new System.Drawing.Size(272, 20);
             this.txtNumeroExistencia.TabIndex = 10;
             // 
             // txtPrecioVenta
@@ -135,7 +136,7 @@ namespace SistematicoProgram
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPrecioVenta.Location = new System.Drawing.Point(109, 226);
             this.txtPrecioVenta.Name = "txtPrecioVenta";
-            this.txtPrecioVenta.Size = new System.Drawing.Size(226, 20);
+            this.txtPrecioVenta.Size = new System.Drawing.Size(272, 20);
             this.txtPrecioVenta.TabIndex = 13;
             // 
             // txtDescripcion
@@ -144,16 +145,15 @@ namespace SistematicoProgram
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescripcion.Location = new System.Drawing.Point(109, 263);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(226, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(272, 20);
             this.txtDescripcion.TabIndex = 14;
             // 
             // txtImagenUrl
             // 
-            this.txtImagenUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtImagenUrl.Location = new System.Drawing.Point(109, 309);
             this.txtImagenUrl.Name = "txtImagenUrl";
-            this.txtImagenUrl.Size = new System.Drawing.Size(226, 20);
+            this.txtImagenUrl.ReadOnly = true;
+            this.txtImagenUrl.Size = new System.Drawing.Size(145, 20);
             this.txtImagenUrl.TabIndex = 15;
             // 
             // btnAgregar
@@ -185,7 +185,7 @@ namespace SistematicoProgram
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtModelo.Location = new System.Drawing.Point(109, 185);
             this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(226, 20);
+            this.txtModelo.Size = new System.Drawing.Size(272, 20);
             this.txtModelo.TabIndex = 12;
             // 
             // cmbMarca
@@ -195,7 +195,7 @@ namespace SistematicoProgram
             this.cmbMarca.FormattingEnabled = true;
             this.cmbMarca.Location = new System.Drawing.Point(109, 148);
             this.cmbMarca.Name = "cmbMarca";
-            this.cmbMarca.Size = new System.Drawing.Size(226, 21);
+            this.cmbMarca.Size = new System.Drawing.Size(272, 21);
             this.cmbMarca.TabIndex = 18;
             // 
             // label1
@@ -208,11 +208,24 @@ namespace SistematicoProgram
             this.label1.Text = "Hola mundo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnBrowse
+            // 
+            this.btnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBrowse.Location = new System.Drawing.Point(263, 309);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(113, 23);
+            this.btnBrowse.TabIndex = 19;
+            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
             // FrmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 390);
+            this.ClientSize = new System.Drawing.Size(396, 390);
+            this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.cmbMarca);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAgregar);
@@ -256,5 +269,6 @@ namespace SistematicoProgram
         public System.Windows.Forms.TextBox txtModelo;
         public System.Windows.Forms.ComboBox cmbMarca;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBrowse;
     }
 }

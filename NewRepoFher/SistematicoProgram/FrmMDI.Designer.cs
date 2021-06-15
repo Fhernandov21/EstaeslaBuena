@@ -45,7 +45,8 @@ namespace SistematicoProgram
             this.vistaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(968, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(726, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -54,14 +55,14 @@ namespace SistematicoProgram
             this.catalogoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mniTabla});
             this.catalogoToolStripMenuItem.Name = "catalogoToolStripMenuItem";
-            this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.catalogoToolStripMenuItem.Text = "Catalogo";
             // 
             // mniTabla
             // 
             this.mniTabla.Name = "mniTabla";
             this.mniTabla.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mniTabla.Size = new System.Drawing.Size(224, 26);
+            this.mniTabla.Size = new System.Drawing.Size(171, 22);
             this.mniTabla.Text = "Productos";
             this.mniTabla.Click += new System.EventHandler(this.nuevoProductoToolStripMenuItem_Click);
             // 
@@ -70,7 +71,7 @@ namespace SistematicoProgram
             this.vistaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mniProductos});
             this.vistaToolStripMenuItem.Name = "vistaToolStripMenuItem";
-            this.vistaToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.vistaToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.vistaToolStripMenuItem.Text = "Vista";
             // 
             // mniProductos
@@ -78,18 +79,18 @@ namespace SistematicoProgram
             this.mniProductos.Name = "mniProductos";
             this.mniProductos.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.I)));
-            this.mniProductos.Size = new System.Drawing.Size(259, 26);
+            this.mniProductos.Size = new System.Drawing.Size(211, 22);
             this.mniProductos.Text = "Productos";
+            this.mniProductos.Click += new System.EventHandler(this.mniProductos_Click);
             // 
             // FrmMDI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 554);
+            this.ClientSize = new System.Drawing.Size(726, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmMDI";
             this.Text = "FrmMDI";
             this.menuStrip1.ResumeLayout(false);

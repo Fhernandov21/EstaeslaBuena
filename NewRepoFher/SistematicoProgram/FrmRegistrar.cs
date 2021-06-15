@@ -81,6 +81,13 @@ namespace SistematicoProgram
                         ImageURl = imagenUrl
                     };
                     ProductoModel.AddElement(Prod);
+                    txtNombres.Text = "";
+                    txtDescripcion.Text = "";
+                    txtImagenUrl.Text = "";
+                    txtModelo.Text  = "";
+                    txtNumeroExistencia.Text = "";
+                    txtPrecioVenta.Text = "";
+                    
                     recibirProducto(Prod);
                     
                     return;
@@ -126,7 +133,18 @@ namespace SistematicoProgram
 
             }
         }
-        
-        
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Imagen = new OpenFileDialog();
+            Imagen.Title = "Simon";
+            Imagen.Filter = "Archivos de Imagen (*.jpg, *.png, *.bmp)|*.jpg; *.png; *.bmp";
+            if(Imagen.ShowDialog() == DialogResult.OK)
+            {
+                string ruta;
+                ruta = Imagen.FileName;
+                txtImagenUrl.Text = ruta;
+            }
+        }
     }
 }

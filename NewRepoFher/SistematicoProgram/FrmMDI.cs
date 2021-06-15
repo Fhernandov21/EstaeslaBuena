@@ -37,5 +37,13 @@ namespace SistematicoProgram
         {
             
         }
+
+        private void mniProductos_Click(object sender, EventArgs e)
+        {
+            VistaImagenes frmVista = new VistaImagenes();
+            frmVista.ProductoModel = Producto_Var;
+            frmVista.MdiParent = this;
+            frmVista.Show();
+        }
     }
 }
