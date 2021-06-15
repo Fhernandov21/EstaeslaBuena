@@ -8,16 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistematicoProgram.poco;
-
+using MaterialSkin;
+using MaterialSkin.Controls;
 namespace SistematicoProgram
 {
     public partial class ProductosConImagen : UserControl
     {
+        //readonly MaterialSkin.MaterialSkinManager msm;
+
         public Producto productos { get; set; }
         public ProductosConImagen()
         {
             InitializeComponent();
             productos = new Producto();
+            //msm = MaterialSkin.MaterialSkinManager.Instance;
+            //msm.EnforceBackcolorOnAllComponents = true;
+            //msm.AddFormToManage(this);
+            //msm.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Indigo500)
         }
 
         private void ProductosConImagen_Load(object sender, EventArgs e)
